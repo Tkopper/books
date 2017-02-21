@@ -1,0 +1,24 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkopp8809/books.git"
+  },
+  "author": "Travis Kopp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkopp8809/books/issues"
+  },
+  "homepage": "https://github.com/tkopp8809/books#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "mongodb": "^2.2.22"
+  },
+  "devDependencies": {},
+  "description": ""
+}
