@@ -14,10 +14,8 @@ MongoClient.connect('mongodb://localhost:27017/books', function (err, db) {
       res.send(result)
     })
   })
-
 })
 
-// respond with "hello world" when a GET request is made to the homepage
 app.use('/', express.static(__dirname + '/User'));
 
 
