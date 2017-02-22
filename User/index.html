@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Books: Test Page</title>
-  <script src="./jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="./angular.min.js"></script>
   <script src="./main.js"></script>
 </head>
 <body>
-  <div ng-controller="BooksController as books">
-    <h1>{{books.thing.authors}}</h1>
+  <div ng-controller="BooksController">
+    <h1>books</h1>
+    <i class="fa fa-spinner fa-spin fa-3x" ng-show="!books"></i>
+    <ul>
+      <li ng-repeat="b in books">{{b.title}} [ <span class="help-text">{{b.authors}}</span> ]</li>
+    </ul>
   </div>
 </body>
 </html>
